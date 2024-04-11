@@ -4,24 +4,24 @@ require "sinatra/reloader"
 
 
 get("/") do
-erb(:home)
+erb(:rules)
 end
 
-get("/app/paper") do
+get("/paper") do
   rps=" rock paper scissors".split
   @play=rps.sample
   @outcome="They played #{@play}!"
   erb(:paper)
 end
 
-get("/app/rock") do
+get("/rock") do
   rps=" rock paper scissors".split
   @play=rps.sample
   @outcome="They played #{@play}!"
   erb(:rock)
 end
 
-get("/app/scissors") do
+get("/scissors") do
  
   rps=" rock paper scissors".split
   @play=rps.sample
