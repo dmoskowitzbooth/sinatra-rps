@@ -8,12 +8,13 @@ erb(:home)
 end
 
 get("/app/paper") do
-  pp "welcome to paper!"
+  rps=" rock paper scissors".split
+  @play=rps.sample
+  @outcome="we played paper, and they played #{@play}."
   erb(:paper)
 end
 
 get("/app/rock") do
-  
   pp "welcome to rock!"
   erb(:rock)
 end

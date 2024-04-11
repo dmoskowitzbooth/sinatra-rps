@@ -9,6 +9,14 @@
 <body>
 
 <h1>Paper</h1>
-  <p>We played paper!</p>
+  <p><%= @outcome %></p>
+
+  <% if @play == "paper"%>
+   <p>We tied!</p>
+  <% elsif @play == "rock"%>
+   <p>We won!</p>
+  <% else %>
+   <p>We lost!</p>
+  <% end %>
 </body>
 </html>
