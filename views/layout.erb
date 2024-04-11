@@ -1,23 +1,23 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>Sinatra RPS</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <style>
-    .navbar {
-      display:flex;
-      justify-content: space-between;
-    }
-    </stlye>
-  </head>
+<head>
+<title>RPS</title>
+<style>
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  }
+  </style>
+</head>
 
-  <body>
-    <div class="navbar">
-      <div><a href="/app/rock"> Play Rock</a></div>
-    </div>
-    
-    <%= yield %>
-
-  </body>
+<body>
+  <div class="navbar">
+    <div><a href="/">Rules</a></div>
+    <div><a href="/app/rock">Play Rock</a></div>
+    <div><a href="/app/paper">Play Paper</a></div>
+    <div><a href="/app/scissors">Play Scissors</a></div>
+  </div>
+<%= yield %>
+</body>
 </html>
